@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 def eulerCycle(G, start): # G = graph (dictionary)
-    path = []
+    path = [start]
     #construct a set of all edges in graph:
     edgesRemaining = set()
     for n in G.keys():
