@@ -9,7 +9,7 @@ def eulerCycle(G, start): # G = graph (dictionary)
           edgesRemaining.add((n,neighbor))
   n = start
   while True:
-     neighbor = G[n]
+    neighbor = G[n]
     edge = (n,neighbor)
     if edge in edgesRemaining:
         edgesRemaining.remove(edge)
