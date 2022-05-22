@@ -11,11 +11,11 @@ def eulerCycle(G, start): # G = graph (dictionary)
     while len(edgesRemaining)!=0 and n != start:
         for neighbor in G[n]:
             edge = (n,neighbor)
-      if edge in edgesRemaining:
-          edgesRemaining.remove(edge)
-        path.append(n)
-        break
-    n = neighbor
-  return 0
+        if edge in edgesRemaining:
+            edgesRemaining.remove(edge)
+          path.append(n)
+          break
+      n = neighbor
+    return 0
 
 eulerCycle({0:[1],1:[0,2],2:[1,0]}, 0)
