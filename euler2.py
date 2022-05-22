@@ -19,4 +19,4 @@ def eulerCycle(G, start): # G = graph (dictionary)
         print(neighbor, edgesRemaining,path)
     return path
 
-int(eulerCycle({0:[1],1:[0]}, 1))
+nt(eulerCycle({0:[1],1:[0]}, 1))
