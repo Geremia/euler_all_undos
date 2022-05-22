@@ -18,4 +18,5 @@ def eulerCycle(G, start): # G = graph (dictionary)
     return path
   n = neighbor
 
+
 eulerCycle({0:[1],1:[0,2],2:[1,0]}, 0)
