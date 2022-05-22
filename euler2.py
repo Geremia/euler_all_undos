@@ -1,4 +1,4 @@
-
+#!/usr/bin/python3
 
 def eulerCycle(G, start): # G = graph (dictionary)
   path = [start]
