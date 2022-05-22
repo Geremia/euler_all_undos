@@ -15,7 +15,7 @@ def eulerCycle(G, start): # G = graph (dictionary)
             edgesRemaining.remove(edge)
             path.append(n)
             break
-         n = neighbor
+        n = neighbor
     return 0
 
 eulerCycle({0:[1],1:[0,2],2:[1,0]}, 0)
