@@ -1,3 +1,5 @@
+
+
 def eulerCycle(G, start): # G = graph (dictionary)
   path = [start]
   #construct a set of all edges in graph:
