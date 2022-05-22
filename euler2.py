@@ -5,7 +5,7 @@ def eulerCycle(G, start): # G = graph (dictionary)
     #construct a set of all edges in graph:
     edgesRemaining = set()
     for n in G.keys():
-      for neighbor in G[n]:  # neighbor is a neighbor of node.
+        for neighbor in G[n]:  # neighbor is a neighbor of node.
           edgesRemaining.add((n,neighbor))
   n = start
   while True:
