@@ -9,13 +9,14 @@ def eulerCycle(G, start): # G = graph (dictionary)
       edgesRemaining.add((n,neighbor))
   n = start
   for neighbor in G[n]:
+    if neighbor == start and len(edgesRemaining)!=0:
+      continue # go to another neighbor
     edge = (n,neighbor)
     if edge in edgesRemaining:
       edgesRemaining.remove(edge)
       path.append(neighbor)
     if neighbor == start and len(edgesRemaining)==0:
       return path
-    n = neighbor
   return 0
 
-eulerCycle({0:[1],1:[0]}, 0)
+eulerCycle({0:[1],1:[0,2],2:[1,0]}, 1)
