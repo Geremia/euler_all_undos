@@ -11,12 +11,17 @@ def eulerCycle(G, start): # G = graph (dictionary)
     while len(edgesRemaining)!=0:
         for neighbor in G[n]:
             edge = (n,neighbor)
-            if edge in edgesRemaining:
-                edgesRemaining.remove(edge)
-                G[n].remove(neighbor)
-                path.append(neighbor)
-                break
-        n = neighbor
+                  if edge in edgesRemaining:
+        edgesRemaining.remove(edge)
+        G[n].remove(neighbor)
+        path.append(neighbor)
+        if G[n] == []:
+          G.pop(n)
+          n+=1
+        else:
+          n = neighbor
+        break
+    n = neighbor
         print(neighbor, edgesRemaining,path)
     return path
 #print(eulerCycle({0:[3], 1:[0], 2:[1,6], 3: [2], 4: [2], 5: [4], 6: [5,8], 7: [9], 8: [7], 9:[6]},6))
