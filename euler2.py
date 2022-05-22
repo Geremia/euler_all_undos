@@ -8,15 +8,14 @@ def eulerCycle(G, start): # G = graph (dictionary)
     for neighbor in G[n]:  # neighbor is a neighbor of node.
       edgesRemaining.add((n,neighbor))
   n = start
-  for neighbor in G[n]:
+  while True:
+    neighbor = G[n]
     if neighbor == start:
       continue # go to another neighbor
     edge = (n,neighbor)
     if edge in edgesRemaining:
       edgesRemaining.remove(edge)
-      print("edgesRemaining:", edgesRemaining)
       path.append(n)
-      print("path:", path)
     if len(edgesRemaining)==0:
       return path
     n = neighbor
