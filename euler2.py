@@ -17,7 +17,6 @@ def eulerCycle(G, start): # G = graph (dictionary)
                 path.append(neighbor)
                 if G[n] == []:
                     G.pop(n)
-                n = neighbor
                 break
         print(neighbor, edgesRemaining,path)
     return path
