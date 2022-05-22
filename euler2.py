@@ -20,6 +20,6 @@ def eulerCycle(G, start): # G = graph (dictionary)
       return path
     else:
       n = neighbor
-  return path
+  return 0
 
 eulerCycle({0:[1],1:[0,2],2:[1,0]}, 0)
