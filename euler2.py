@@ -13,7 +13,9 @@ def eulerCycle(G, start): # G = graph (dictionary)
     edge = (n,neighbor)
     if edge in edgesRemaining:
       edgesRemaining.remove(edge)
+      print("edgesRemaining:", edgesRemaining)
       path.append(neighbor)
+      print("path:", path)
     if neighbor == start and len(edgesRemaining)!=0:
       return path
     else:
