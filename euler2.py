@@ -10,8 +10,7 @@ def eulerCycle(G, start): # G = graph (dictionary)
   n = start
   while True:
     neighbor = G[n]
-    if neighbor == start:
-      continue # go to another neighbor
+
     edge = (n,neighbor)
     if edge in edgesRemaining:
       edgesRemaining.remove(edge)
