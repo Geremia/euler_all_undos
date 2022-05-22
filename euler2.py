@@ -8,7 +8,7 @@ def eulerCycle(G, start): # G = graph (dictionary)
         for neighbor in G[n]:  # neighbor is a neighbor of node.
             edgesRemaining.add((n,neighbor))
     n = start
-    while len(edgesRemaining)!=0 and n != start:
+    while len(edgesRemaining)!=0 
         for neighbor in G[n]:
             edge = (n,neighbor)
         if edge in edgesRemaining:
