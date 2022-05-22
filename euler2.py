@@ -20,4 +20,4 @@ def eulerCycle(G, start): # G = graph (dictionary)
     return path
 
 eulerCycle({0:[1],1:[0,2],2:[1,0]}, 1)
-
+eulerCycle({0:[1],1:[0,2],2:[1,0]}, 1)
