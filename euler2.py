@@ -21,7 +21,6 @@ def eulerCycle(G, start): # G = graph (dictionary)
         else:
           n = neighbor
         break
-    n = neighbor
         print(neighbor, edgesRemaining,path)
     return path
 #print(eulerCycle({0:[3], 1:[0], 2:[1,6], 3: [2], 4: [2], 5: [4], 6: [5,8], 7: [9], 8: [7], 9:[6]},6))
